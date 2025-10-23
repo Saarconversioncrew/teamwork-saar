@@ -1,0 +1,19 @@
+{
+  "name": "Teamwork Card (Saar)",
+  "description": "This is an custom card to display Teamwork information in HubSpot CRM.",
+  "uid": "teamwork_card",
+  "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write","crm.objects.companies.read", "crm.objects.companies.write"],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "extensions/teamwork-card.json"
+        }
+      ]
+    }
+  },
+  "webhooks": {
+    "file": "./webhooks/webhooks.json"
+  }
+}
